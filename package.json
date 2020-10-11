@@ -1,0 +1,16 @@
+{
+  "name": "dynamic-color-palette",
+  "version": "1.0.0",
+  "description": "Master in Front-End Development by Lemoncode - Challenge 1: Create a color palette using Sass",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "layout",
+    "sass"
+  ],
+  "author": "@zaretmir",
+  "license": "ISC"
+}
