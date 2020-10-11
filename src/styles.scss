@@ -3,8 +3,7 @@ body {
   padding: 0;
 }
 
-.container-1 {
-  $base-color: #ee7674;
+@mixin palette($base-color) {
   width: 100vw;
   text-align: center;
 
@@ -23,56 +22,24 @@ body {
       background-color: lighten($base-color, 5 * $i);
     }
   }
+
 }
 
-.container-2 {
-  $base-color: #75b9be;
-  width: 100vw;
-  text-align: center;
-
-  .base-color {
-    background-color: $base-color;
-  }
-
-  @for $i from 1 through 4 {
-    .darken-#{$i} {
-      background-color: darken($base-color, 10 * $i);
-    }
-  }
-
-  @for $i from 1 through 4 {
-    .lighten-#{$i} {
-      background-color: lighten($base-color, 5 * $i);
-    }
-  }
+.palette-1 {
+  @include palette(#ee7674);
 }
 
-.container-3 {
-  $base-color: #d0d6b5;
-  width: 100vw;
-  text-align: center;
+.palette-2 {
+  @include palette(#75b9be);
+}
 
-  .base-color {
-    background-color: $base-color;
-  }
-
-  @for $i from 1 through 4 {
-    .darken-#{$i} {
-      background-color: darken($base-color, 10 * $i);
-    }
-  }
-
-  @for $i from 1 through 4 {
-    .lighten-#{$i} {
-      background-color: lighten($base-color, 5 * $i);
-    }
-  }
+.palette-3 {
+  @include palette(#d0d6b5);
 }
 
 .color-box {
   display: inline-block;
   color: azure;
-  background-color: black;
 
   width: 8vw;
   $height: 5vw;
