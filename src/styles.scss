@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  $base-color-1: coral;
+  width: 100vw;
+  text-align: center;
+  .darken-4 {
+    background-color: darken($base-color-1, 40);
+  }
+  .darken-3 {
+    background-color: darken($base-color-1, 30);
+  }
+  .darken-2 {
+    background-color: darken($base-color-1, 20);
+  }
+  .darken-1 {
+    background-color: darken($base-color-1, 10);
+  }
+  .base-color {
+    background-color: $base-color-1;
+  }
+  .lighten-4 {
+    background-color: lighten($base-color-1, 20);
+  }
+  .lighten-3 {
+    background-color: lighten($base-color-1, 15);
+  }
+  .lighten-2 {
+    background-color: lighten($base-color-1, 10);
+  }
+  .lighten-1 {
+    background-color: lighten($base-color-1, 5);
+  }
+}
+
+.color-box {
+  display: inline-block;
+  color: azure;
+  background-color: black;
+
+  width: 8vw;
+  $height: 5vw;
+  height: $height;
+  line-height: $height;
+  text-align: center;
+
+  border-radius: 0.5rem;
+  margin: 0.1rem;
+}
