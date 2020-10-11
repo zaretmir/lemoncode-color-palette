@@ -4,9 +4,6 @@ body {
 }
 
 @mixin palette($base-color) {
-  width: 100vw;
-  text-align: center;
-
   .base-color {
     background-color: $base-color;
   }
@@ -29,6 +26,11 @@ body {
 
 }
 
+.container {
+  width: 100vw;
+  text-align: center;
+}
+
 .palette-1 {
   @include palette(#ee7674);
 }
@@ -40,6 +42,7 @@ body {
 .palette-3 {
   @include palette(#d0d6b5);
 }
+
 
 .color-box {
   display: inline-block;
