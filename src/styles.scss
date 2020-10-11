@@ -3,24 +3,68 @@ body {
   padding: 0;
 }
 
-.container {
-  $base-color-1: coral;
+.container-1 {
+  $base-color: #ee7674;
   width: 100vw;
   text-align: center;
 
   .base-color {
-    background-color: $base-color-1;
+    background-color: $base-color;
   }
 
   @for $i from 1 through 4 {
     .darken-#{$i} {
-      background-color: darken($base-color-1, 10 * $i);
+      background-color: darken($base-color, 10 * $i);
     }
   }
 
   @for $i from 1 through 4 {
     .lighten-#{$i} {
-      background-color: lighten($base-color-1, 5 * $i);
+      background-color: lighten($base-color, 5 * $i);
+    }
+  }
+}
+
+.container-2 {
+  $base-color: #75b9be;
+  width: 100vw;
+  text-align: center;
+
+  .base-color {
+    background-color: $base-color;
+  }
+
+  @for $i from 1 through 4 {
+    .darken-#{$i} {
+      background-color: darken($base-color, 10 * $i);
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .lighten-#{$i} {
+      background-color: lighten($base-color, 5 * $i);
+    }
+  }
+}
+
+.container-3 {
+  $base-color: #d0d6b5;
+  width: 100vw;
+  text-align: center;
+
+  .base-color {
+    background-color: $base-color;
+  }
+
+  @for $i from 1 through 4 {
+    .darken-#{$i} {
+      background-color: darken($base-color, 10 * $i);
+    }
+  }
+
+  @for $i from 1 through 4 {
+    .lighten-#{$i} {
+      background-color: lighten($base-color, 5 * $i);
     }
   }
 }
