@@ -7,32 +7,21 @@ body {
   $base-color-1: coral;
   width: 100vw;
   text-align: center;
-  .darken-4 {
-    background-color: darken($base-color-1, 40);
-  }
-  .darken-3 {
-    background-color: darken($base-color-1, 30);
-  }
-  .darken-2 {
-    background-color: darken($base-color-1, 20);
-  }
-  .darken-1 {
-    background-color: darken($base-color-1, 10);
-  }
+
   .base-color {
     background-color: $base-color-1;
   }
-  .lighten-4 {
-    background-color: lighten($base-color-1, 20);
+
+  @for $i from 1 through 4 {
+    .darken-#{$i} {
+      background-color: darken($base-color-1, 10 * $i);
+    }
   }
-  .lighten-3 {
-    background-color: lighten($base-color-1, 15);
-  }
-  .lighten-2 {
-    background-color: lighten($base-color-1, 10);
-  }
-  .lighten-1 {
-    background-color: lighten($base-color-1, 5);
+
+  @for $i from 1 through 4 {
+    .lighten-#{$i} {
+      background-color: lighten($base-color-1, 5 * $i);
+    }
   }
 }
 
