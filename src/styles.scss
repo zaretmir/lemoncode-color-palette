@@ -11,15 +11,19 @@ body {
     background-color: $base-color;
   }
 
-  @for $i from 1 through 4 {
+  $total-darken-boxes: 4;
+  $darken-step: 10;
+  @for $i from 1 through $total-darken-boxes {
     .darken-#{$i} {
-      background-color: darken($base-color, 10 * $i);
+      background-color: darken($base-color, $i * $darken-step);
     }
   }
 
-  @for $i from 1 through 4 {
+  $total-lighten-boxes: 4;
+  $lighten-step: 5;
+  @for $i from 1 through $total-lighten-boxes {
     .lighten-#{$i} {
-      background-color: lighten($base-color, 5 * $i);
+      background-color: lighten($base-color, $i * $lighten-step);
     }
   }
 
