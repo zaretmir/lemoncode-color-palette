@@ -30,6 +30,17 @@ body {
   width: 100vw;
   text-align: center;
 
+  &.palette-1 {
+    @include palette(#ee7674);
+  }
+  &.palette-2 {
+    @include palette(#75b9be);
+  }
+
+  &.palette-3 {
+    @include palette(#d0d6b5);
+  }
+
   .color-box {
     display: inline-block;
     color: azure;
@@ -43,18 +54,6 @@ body {
     border-radius: 0.5rem;
     margin: 0.1rem;
   }
-}
-
-.palette-1 {
-  @include palette(#ee7674);
-}
-
-.palette-2 {
-  @include palette(#75b9be);
-}
-
-.palette-3 {
-  @include palette(#d0d6b5);
 }
 
 
