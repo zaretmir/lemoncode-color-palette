@@ -1,3 +1,7 @@
+$color-apricot: #ee7674;
+$color-blue-neptune: #75b9be;
+$color-green-mist: #d0d6b5;
+
 body {
   margin: 0;
   padding: 0;
@@ -28,17 +32,17 @@ body {
 .container {
   width: 100vw;
   text-align: center;
-  margin: 0.8rem 0px;
+  margin: 0.8rem 0;
 
   &.palette-1 {
-    @include palette(#ee7674);
+    @include palette($color-apricot);
   }
   &.palette-2 {
-    @include palette(#75b9be);
+    @include palette($color-blue-neptune);
   }
 
   &.palette-3 {
-    @include palette(#d0d6b5);
+    @include palette($color-green-mist);
   }
 
   .color-box {
@@ -49,7 +53,7 @@ body {
     line-height: $height;
     text-align: center;
     border-radius: 0.5rem;
-    margin: 0px 0.1rem ;
+    margin: 0 0.1rem ;
 
     & span {
       color: darkslategray;
